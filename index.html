@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>JavaScript Form Validation</title>
+<link rel='stylesheet' href='style.css' type='text/css' />
+<script src="validation.js"></script>
+</head>
+<body bgcolor="#87CEEB";>
+<h1>Registration Form</h1>
+<hr/>
+<form name='registration' onSubmit="return formValidation();" oninput="fullname.value=firstname.value +' '+ lastname.value">
+<ul>
+<li><label for="firstname">First Name:</label></li>
+<li><input type="text" name="firstname" size="50" required/></li>
+<li><label for="lastname">Last Name:</label></li>
+<li><input type="text" name="lastname" size="50" /></li>
+<li><label for="fullname">Full Name:</label></li>
+<li><input type="text" name="fullname" size="50" disabled required/></li>
+<li><label for="age">Age:</label></li>
+<li><input type="text" name="age" size="12" required/></li>
+<li><label for="phone">Phone Number:</label></li>
+<li><input type="text" name="phone" size="12" required/></li>
+<li><label for="address">Address:</label></li>
+<li><input type="text" name="address" size="50" required/></li>
+<li><label for="email">Email:</label></li>
+<li><input type="text" name="email" size="50" required/></li>
+<li><label id="gen">Gender:</label></li>
+<li><input type="radio" name="gender" value="Male" /><span>Male</span></li>
+<li><input type="radio" name="gender" value="Female" /><span>Female</span></li>
+<li><input type="submit" name="submit" value="Submit" /></li>
+<li><input type="reset" name="Reset" value="Reset" /></li>
+</ul>
+</form>
+</body>
+</html>
